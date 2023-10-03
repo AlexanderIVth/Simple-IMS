@@ -1,0 +1,19 @@
+﻿<Window x:Class="SimpleIMS.AddItem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleIMS"
+        mc:Ignorable="d"
+        Title="AddItem" Height="169" Width="250" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="buttonConfirm" Content="Confirm" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="105" Click="buttonConfirm_Click"/>
+        <Button x:Name="buttonCancel" Content="Cancel" HorizontalAlignment="Right" Margin="0,0,7,10" VerticalAlignment="Bottom" Width="105" Click="buttonCancel_Click"/>
+        <TextBlock x:Name="txtBlockItemName" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Item Name" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtBlockItemDescription" HorizontalAlignment="Left" Margin="10,31,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtBlockDateAdded" HorizontalAlignment="Left" Margin="10,52,0,0" TextWrapping="Wrap" Text="Date Added" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxName" HorizontalAlignment="Right" Margin="0,10,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtBoxDescription" HorizontalAlignment="Right" Margin="0,33,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="dPAdded" HorizontalAlignment="Right" Margin="0,56,10,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
